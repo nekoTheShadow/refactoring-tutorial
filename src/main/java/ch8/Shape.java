@@ -22,15 +22,15 @@ public abstract class Shape {
 	protected abstract String getName();
 	protected abstract String draw();
 	
-	public static Line createLine(int startX, int startY, int endX, int endY) {
+	public static Shape createLine(int startX, int startY, int endX, int endY) {
 		return new Line(startX, startY, endX, endY);
 	}
 	
-	public static Oval createOval(int startX, int startY, int endX, int endY) {
+	public static Shape createOval(int startX, int startY, int endX, int endY) {
 		return new Oval(startX, startY, endX, endY);
 	}
 	
-	public static Rectangle createRectangle(int startX, int startY, int endX, int endY) {
+	public static Shape createRectangle(int startX, int startY, int endX, int endY) {
 		return new Rectangle(startX, startY, endX, endY);
 	}
 }
