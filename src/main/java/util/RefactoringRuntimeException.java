@@ -6,4 +6,8 @@ public class RefactoringRuntimeException extends RuntimeException {
 	public RefactoringRuntimeException(String msg) {
 		super(msg);
 	}
+	
+	public RefactoringRuntimeException(Throwable e) {
+		super(e);
+	}
 }
